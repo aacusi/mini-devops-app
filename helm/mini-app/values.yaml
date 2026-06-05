@@ -1,0 +1,12 @@
+replicaCount: 2
+
+image:
+  repository: ghcr.io/dayothegreat/mini-devops-app
+  tag: latest
+
+service:
+  type: ClusterIP
+  port: 80
+
+ingress:
+  host: mini.local
